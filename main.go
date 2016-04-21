@@ -21,7 +21,7 @@ var (
 )
 
 func init() {
-	favsApi, err := endpoints.RegisterService(&FavoritesService{}, "favorites", "v1", "BackYard API", false)
+	favsApi, err := endpoints.RegisterService(&FavoritesService{}, "favorites", "v1", "Favorites API", false)
 	if err != nil {
 		log.Fatalf("Register service: %v", err)
 	}
