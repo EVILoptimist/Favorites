@@ -42,7 +42,7 @@ func (ps *FavoritesService) FavsUpdate(c context.Context, r *FavoriteSingle) (*F
 	}
 
 	for i, f := range r.Favorites {
-		f.Order = int64(i)
+		f.Order = int64(i + 1)
 		f.Parent = k
 	}
 	if _, err := g.PutMulti(&r.Favorites); err != nil {
