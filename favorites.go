@@ -18,7 +18,7 @@ type Favorite struct {
 
 type FavoriteSingle struct {
 	Person    *Person     `json:"person" xml:"person"`
-	Favorites []*Favorite `json:"favorite" xml:"favorite"`
+	Favorites []*Favorite `json:"favorites" xml:"favorites"`
 }
 
 type FavoriteFindRequest struct {
